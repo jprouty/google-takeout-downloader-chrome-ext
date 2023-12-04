@@ -11,15 +11,6 @@
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-
-  color-scheme: light dark;
-  background-color: #242424;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: #fafafa;
-  }
 }
 
 body {

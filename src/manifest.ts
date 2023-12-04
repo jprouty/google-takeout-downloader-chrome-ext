@@ -17,14 +17,17 @@ export default defineManifest({
     default_icon: 'img/logo-48.png',
   },
   options_page: 'options.html',
-  devtools_page: 'devtools.html',
   background: {
     service_worker: 'src/background/index.ts',
     type: 'module',
   },
   content_scripts: [
     {
-      matches: ['http://*/*', 'https://*/*'],
+      matches: [
+        "https://takeout.google.com/*",
+        "https://takeout.google.com/settings/takeout/downloads*",
+        "https://takeout.google.com/takeout/downloads*"
+      ],
       js: ['src/contentScript/index.ts'],
     },
   ],
@@ -37,5 +40,8 @@ export default defineManifest({
       matches: [],
     },
   ],
-  permissions: ['sidePanel', 'storage'],
+  permissions: [
+    'sidePanel',
+    'downloads',
+    'storage'],
 })

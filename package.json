@@ -1,16 +1,17 @@
 {
-  "name": "google-takeout-downloader-chrome-ext",
-  "displayName": "google-takeout-downloader-chrome-ext",
-  "version": "0.0.0",
+  "name": "Google Takeout Bulk Downloader",
+  "displayName": "Google Takeout Bulk Downloader",
+  "version": "1.0.0",
   "author": "Jeff Prouty",
-  "description": "",
+  "description": "A Chrome extension that assists with bulk download of Google Takeout archives.",
   "type": "module",
   "license": "MIT",
   "keywords": [
     "chrome-extension",
     "react",
-    "vite",
-    "create-chrome-ext"
+    "google-takeout",
+    "download",
+    "bulk-downloader"
   ],
   "engines": {
     "node": ">=14.18.0"
